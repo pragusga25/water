@@ -1,0 +1,12 @@
+actions:
+- name: createProfile
+  definition:
+    kind: synchronous
+    handler: http://host.docker.internal:3000/users/createProfile
+custom_types:
+  enums: []
+  input_objects:
+  - name: CreateProfileArgs
+  objects:
+  - name: CreateProfileOutput
+  scalars: []

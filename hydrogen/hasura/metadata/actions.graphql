@@ -1,0 +1,21 @@
+type Mutation {
+  createProfile (
+    params: CreateProfileArgs!
+  ): CreateProfileOutput!
+}
+
+
+
+
+input CreateProfileArgs {
+  fullname : String!
+  email : String!
+  username : String!
+  password : String!
+}
+
+type CreateProfileOutput {
+  user_id : Int!
+  fullname : String!
+}
+
